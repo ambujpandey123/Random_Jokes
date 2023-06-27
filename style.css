@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kalam&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: darkseagreen;
+}
+.header{
+  background-color: rgba(225, 142, 242, 0.51);
+  display: flex;
+  justify-content: space-between;
+}
+#logo{
+  margin:20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Creepster', cursive;
+}
+#logo>img{
+  margin-right:10px;
+}
+#burgur{
+  margin: 20px;
+  height: 27px;
+  width: 37px;
+  border: .5px solid grey;
+  border-radius: 5px;
+  background-color: rgba(158,170, 188, 1);
+  cursor: pointer;
+  overflow:hidden;
+}
+.line{
+  height: 2.3px;
+  background-color: rgba(63, 64, 63, 1);
+  width:  27px;
+  margin: 5px;
+  transition:transform .3s ease-in-out;
+  transform-origin: left;
+}
+#navbar{
+  height:0px;
+  width:100vw;
+  background-color:#8A8CA4;
+  overflow: hidden;
+  transition:all .5s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navbar a{
+  text-decoration: none;
+  height: 20px;
+  width: 80px;
+  background-color: #AC69B8CC;
+  color: #09398C;
+  font-size: 11px;
+  border: 1px solid mediumblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kalam', cursive;
+}
+#navbar a:hover{
+  background-color:#67B1BCC4;
+}
+#join{
+  color: #09398C;
+  font-family: 'Kalam', cursive;
+}
+#container{
+  width:100vw;
+  height:450px;
+  background-color: darkseagreen ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#box{
+  height:200px;
+  width:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 25px 0 25px 0;
+  margin-bottom: 50px;
+  background-color: palevioletred;
+  padding: 15px;
+  text-transform: uppenrcase;
+  overflow: auto;
+ font-family: 'Kalam', cursive;
+}
+#next{
+  padding:5px;
+  border-radius: 7px;
+  color:#303FE4;
+  background-color: #B053CD;
+  font-size:20px;
+  width: 100px;
+  font-family: 'Kalam', cursive;
+}
+#load{
+  height:50px;
+  width:50px;
+  border:5px solid  #AC1B1B91;
+  border-right:5px solid  palevioletred;
+  border-radius: 50%;
+  margin-bottom:25px;
+  animation: rotate .5s linear infinite;
+}
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  30%{transform: rotate(30deg);}
+  100%{transform: rotate(360deg);}
+}
+#ltext{
+  color: #6E0E0E54;
+}
